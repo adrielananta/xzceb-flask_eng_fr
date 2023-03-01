@@ -3,10 +3,15 @@ Translator unit tests
 """
 import unittest
 import sys
+import os
 
-sys.path.append("../machinetranslation")
+current = os.path.dirname(os.path.realpath(__file__))
 
-from machinetranslation.translator import english_to_french, french_to_english
+parent = os.path.dirname(current)
+
+sys.path.append(parent)
+
+from translator import english_to_french, french_to_english
 
 class EnglishToFrenshTest(unittest.TestCase):
     """
