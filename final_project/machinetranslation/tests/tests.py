@@ -6,7 +6,7 @@ import sys
 
 sys.path.append("../machinetranslation")
 
-from translator import english_to_french, french_to_english
+from machinetranslation.translator import english_to_french, french_to_english
 
 class EnglishToFrenshTest(unittest.TestCase):
     """
