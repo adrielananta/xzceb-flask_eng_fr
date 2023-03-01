@@ -34,6 +34,7 @@ class EnglishToFrenshTest(unittest.TestCase):
         Valid word String input
         """
         self.assertEqual(english_to_french("Hello"), "Bonjour")
+        self.assertNotEqual(english_to_french("Hello"), "Hello")
 
 class FrenchToEnglishTest(unittest.TestCase):
     """
@@ -56,6 +57,7 @@ class FrenchToEnglishTest(unittest.TestCase):
         Valid word String input
         """
         self.assertEqual(french_to_english("Bonjour"), "Hello")
+        self.assertNotEqual(french_to_english("Bonjour"), "Bonjour")
 
 if __name__ == '__main__':
     unittest.main()
